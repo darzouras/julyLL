@@ -62,8 +62,12 @@
 				<section>
 					<section>
 						<h2>Accessibility from the Start</h2>
-					</section>
 
+						<p>Thinking about accessibility at the beginning of a project prevents extra work later on!</p>
+					</section>
+				</section>
+
+				<section>
 					<section>
 						<h3>Writing good markup</h3>
 					</section>
@@ -77,14 +81,109 @@
 						<ul>
 							<li><a href="https://webdesign.tutsplus.com/articles/the-importance-of-heading-levels-for-assistive-technology--cms-31753" target="_blank">Use correct heading levels (h1, h2, h3...)</a></li>
 							<li><a href="https://www.scottohara.me/blog/2018/03/03/landmarks.html" target="_blank">Using landmarks</a></li>
-							<li>Using semantic elements</li>
+							<li><a href="https://css-tricks.com/why-how-and-when-to-use-semantic-html-and-aria/" target="_blank">Using semantic elements</a> and <a href="https://www.w3.org/TR/aria-in-html/" target="_blank">ARIA ("Accessible Rich Internet Applications")</a></a></li>
 						</ul>
 					</section>
 
 					<section>
-						(codepen here)
+						<iframe data-src="https://codepen.io/comfycoding/details/yLeKGLp" style="width: 100vw; height: 75vh;" data-preload></iframe>
+						<small><a href="https://codepen.io/comfycoding/details/yLeKGLp" target="_blank">Go to codepen</a></small>
 					</section>
 				</section>
+
+				<section>
+					<section>
+						<h3>Typography</h3>
+						<p>(For devs AND designers!)</p>
+					</section>
+
+					<section>
+						<p><a href="https://betterwebtype.com/articles/2019/06/16/5-keys-to-accessible-web-typography/" target="_blank">5 Keys to Accessible Web Typography</a></p>
+
+						<ol>
+							<li>Set base font in relative units</li>
+							<li>Check color and then contrast</li>
+							<li>Use highly legible fonts</li>
+							<li>Shape paragraphs well</li>
+							<li>Use correct heading levels</li>
+						</ol>
+					</section>
+
+					<section>
+						<h4>1. Set base font sizes in relative units</h4>
+
+						<pre>
+							<code data-trim>
+								:root {
+									font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+								}
+
+								.font-size--small {
+									font-size: 1.4rem; /* 14px */
+								}
+
+								.font-size--default {
+									font-size: 1.6rem; /* 16px */
+								}
+
+								.font-size--large {
+									font-size: 2.4rem; /* 24px */
+								}
+							</code>
+						</pre>
+
+						<p><small>(<a href="https://css-tricks.com/accessible-font-sizing-explained/" target="_blank">Accessible Font Sizing Explained</a>)</small></p>
+					</section>
+
+					<section>
+						<h4>2. Check color and then contrast</h4>
+
+						<img src="/dist/images/contrast.jpg" width=75%>
+
+						<p style="font-size: .8em">This example uses an acceptable font color / background combination, but font weight makes it hard to read.</p>
+
+					</section>
+
+					<section>
+						<h4>3. Use highly legible fonts</h4>
+						<p>Legibility = How easy it is to distinguish one letter from another</p>
+						<p><a href="https://thrive.design/best-fonts-for-reading-easiest-to-read-online-design-fonts/" target="_blank">A list of easy-to-read fonts</a></p>
+					</section>
+
+					<section>
+						<h4>4. Shape paragraphs well</h4>
+
+						<div style="display: flex; justify-content: space-between; align-items: center; width:90%; margin: auto;">
+							<ul>
+								<li>Line height</li>
+								<li>Line length</li>
+								<li>Alignment</li>
+							</ul>
+
+							<img src="dist/images/paragraphs.jpg" width=550px>
+						</div>
+					</section>
+
+					<section>
+						<h4>5. Use correct heading levels</h4>
+
+						<p>DO NOT use h1, h2, h3... to style your text!</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Recognizing Traps</h3>
+					</section>
+
+					<section>
+						<h4>Keyboard & Focus traps</h4>
+
+						<p>Probably the most common trap you'll encounter. Keyboard trap: </p>
+						<p>Violates <a>WCAG 2.1: Make all functionality available from a keyboard</a></p>
+					</section>
+				</section>
+
 				<section>
 					<section>
 						<h2>Resources</h2>
@@ -112,6 +211,8 @@
 						<ul>
 							<li><a href="https://webdesign.tutsplus.com/series/web-accessibility-the-complete-learning-guide--cms-1301" target="_blank">Web Accessibility: The Complete Learning Guide</a></li>
 							<li><a href="https://www.smashingmagazine.com/2020/06/equivalent-experiences-part2/" target="_blank">Equivalent Experiences: Thinking Equivalently</a></li>
+							<li><a href="https://medium.com/alistapart/writing-html-with-accessibility-in-mind-a62026493412" target="_blank">Writing HTML with accessibility in mind</a></li>
+							<li><a href="https://web.dev/a11y-tips-for-web-dev/" target="_blank">Accessibility tips for web developers</a></li>
 						</ul>
 					</section>
 				</section>
